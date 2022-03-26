@@ -1,0 +1,56 @@
+{
+  "name": "nestjs-bcrypt",
+  "version": "1.0.0",
+  "description": "Easy to use Nest bcrypt module",
+  "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikyOFF/nestjs-bcrypt.git"
+  },
+  "keywords": [
+    "nestjs",
+    "bcrypt"
+  ],
+  "author": "nikyoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikyOFF/nestjs-bcrypt/issues"
+  },
+  "homepage": "https://github.com/NikyOFF/nestjs-bcrypt#readme",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc && tsc -d --skipLibCheck ./src/index.ts"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^7.6.15",
+    "@nestjs/core": "^7.6.15",
+    "@nestjs/testing": "^7.6.15",
+    "@types/bcrypt": "^5.0.0",
+    "@types/glob": "^7.1.1",
+    "@types/jest": "^27.0.2",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.5.6",
+    "typescript": "^4.2.4"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
